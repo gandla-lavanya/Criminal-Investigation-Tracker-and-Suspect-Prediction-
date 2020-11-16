@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ADD EVIDENCE</title>
+        <link rel="stylesheet" type="text/css" href="addevidencestyle.css">
+    </head>
+    <style>
+        .headcenter{text-align:center}
+        button{
+            font-size: 40px;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        #container
+        {
+            text-align: center;
+        }
+    </style> 
+    <body>
+        <div class="form">
+            <body background="img1.png">
+            <h1 class="headcenter">ADD EVIDENCE</h1>
+            <form action="#" method="post">
+                <p>CaseId:</p><br>
+                <input type="number" name="caseid" placeholder="Enter CaseId"><br><br><br>
+                Evidence Type:
+                <select id ="Evidence Type" name="type" style=" width: 100px ; height: 30px">
+                    <option value= "Logical">Logical</option>
+                    <option value= "Physical">Physical</option>
+                </select>
+                <p>Evidence:</p><br>
+                <input type="text" name="evidence" placeholder="Enter Evidence">
+                <p>Suspect:</p><br>
+                <input type="text" name="suspect" placeholder="Enter Suspect">
+                <p>Note:</p>
+                <textarea type="text" name="class="input-field textarea-field" placeholder="Note"></textarea>
+                <script>
+                    function fetch()
+                    {
+                        var get =document.getElementById("get").value;
+                        document.getElementById("put").value= get;
+                    }
+                </script>
+                <form>
+                    <p>Points:</p>
+                    <label>Range(1 to 10):</label>
+                    <input type="range" min="1" max="10" id="get" onchange="fetch()"/><br>
+                    <input type="text" id="put">
+                </form>
+                <div id="container">
+                    <button type="submit" value="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

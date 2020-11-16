@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Officer</title>
+        <link rel="stylesheet" type="text/css" href="addcasestyle.css">
+    </head>
+    <style>
+        .headcenter{text-align:center}
+        button{
+            font-size: 40px;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        #container
+        {
+            text-align: center;
+        }
+    </style> 
+    <body>
+        <div class="form">
+            <body background="img1.png">
+            <h1 class="headcenter">ADD Officer</h1>
+            <form action="#" method="post">
+                <p>OfficerId:</p><br>
+                <input type="number" name="officerid" placeholder="Enter OfficerId">
+                <p>OfficerName:</p><br>
+                <input type="text" name="officername" placeholder="Enter Officer Name" pattern="[0-9]{10}"><br><br>
+                <label> Mobile Number :</label><br><br>
+                <input type="number" name="mobilenumber" id="num" placeholder="Enter MobileNumber">
+                <p>Adresss:</p><br>
+                <textarea type="text" name="address" class="input-field textarea-field" placeholder="Adress"></textarea>
+                <p>MailId:</p><br>
+                <input type="text" name="mailid" placeholder="Mailid">
+                <p>Area:</p><br>
+                <input type="text" name="area" placeholder="Area">
+                <div id="container">
+                    <button type="submit">ADD Officer</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

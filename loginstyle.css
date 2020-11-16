@@ -1,14 +1,14 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(bgimg.jpg);
+    background: url(img1.png);
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
 }
 .login-box{
     width: 320px;
-    height: 420px;
+    height: 460px;
     background: white;
     color: rgb(14, 0, 0);
     top: 50%;
@@ -35,7 +35,7 @@ h1{
 .login-box p{
     margin: 0;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .login-box input{
     width: 100%;
@@ -44,7 +44,7 @@ h1{
 .login-box input[type="text"], input[type="password"]
 {
     border: none;
-    border-bottom: 1px solid rgb(14, 0, 0, 0.904);
+    border-bottom: 1px solid rgba(14, 0, 0, 0.904);
     background: transparent;
     outline: none;
     height: 40px;
@@ -60,19 +60,30 @@ h1{
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
+    margin-top: 10px;
 }
 .login-box input[type="submit"]:hover
 {
     cursor: pointer;
     background: #21dfd5;
     color: #000;
+    margin-top: 10px;
 }
 .login-box a{
     text-decoration: none;
     font-size: 14px;
-    color: rgb(7, 5, 5);
+    color: rgb(7, 6, 6);
 }
 .login-box a:hover
 {
     color: #1867b1;
+}
+select{
+    width: 100%;
+    padding: 5px 5px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing:border-box;
 }
