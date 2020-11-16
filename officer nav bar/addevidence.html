@@ -2,6 +2,9 @@
 <html>
     <head>
         <title>ADD EVIDENCE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link rel="stylesheet" type="text/css" href="addevidencestyle.css">
     </head>
     <style>
@@ -18,20 +21,38 @@
         }
     </style> 
     <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">DASHBOARD</label>
+            <ul>
+                <li><a class="active" href="addsuspects.html">Add Suspects</a></li>
+                <li><a href="addevidence.html">Add Evidence</a></li>
+                <li><a href="addcase.html">Add Case</a></li>
+                <li><a href="addofficer.html">Add Officer</a></li>
+                <li><a href="addcaseofficer.html">Add Case Officer</a></li>
+                <li><a href="viewsuspects.html">View Suspects</a></li>
+                <li><a href="viewevidence.html">View Evidence</a></li>
+                <li><a href="viewofficers.html">View Officers</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
         <div class="form">
             <body background="img1.png">
             <h1 class="headcenter">ADD EVIDENCE</h1>
             <form action="#" method="post">
-                <p>CaseId:</p><br>
-                <input type="number" name="caseid" placeholder="Enter CaseId"><br><br><br>
+                <p>CaseId:</p>
+                <input type="number" name="caseid" placeholder="Enter CaseId"><br><br>
                 Evidence Type:
                 <select id ="Evidence Type" name="type" style=" width: 100px ; height: 30px">
                     <option value= "Logical">Logical</option>
                     <option value= "Physical">Physical</option>
                 </select>
-                <p>Evidence:</p><br>
+                <p>Evidence:</p>
                 <input type="text" name="evidence" placeholder="Enter Evidence">
-                <p>Suspect:</p><br>
+                <p>Suspect:</p>
                 <input type="text" name="suspect" placeholder="Enter Suspect">
                 <p>Note:</p>
                 <textarea type="text" name="class="input-field textarea-field" placeholder="Note"></textarea>
